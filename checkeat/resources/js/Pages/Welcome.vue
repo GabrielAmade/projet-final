@@ -40,7 +40,7 @@ defineProps({
                     :href="route('register')"
                     class="ml-4 text-sm text-gray-700 underline"
                 >
-                    Register
+                    Inscription
                 </Link>
             </template>
         </div>
