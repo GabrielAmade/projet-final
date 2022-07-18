@@ -40,7 +40,8 @@ defineProps({
                     :href="route('register')"
                     class="ml-4 text-sm text-gray-700 underline"
                 >
-                    Inscription re
+                    <<<<<<< HEAD Inscription ggg ======= Inscription ggg >>>>>>>
+                    77606d38954e8a2e12f88b31aa1e375b01ee6602
                 </Link>
             </template>
         </div>
