@@ -32,7 +32,7 @@ const submit = () => {
 
         <form @submit.prevent="submit">
             <div>
-                <BreezeLabel for="name" value="Name" />
+                <BreezeLabel for="name" value="Nom" />
                 <BreezeInput
                     id="name"
                     type="text"
@@ -45,7 +45,7 @@ const submit = () => {
             </div>
 
             <div>
-                <BreezeLabel for="firstname" value="Firstname" />
+                <BreezeLabel for="firstname" value="Prénom" />
                 <BreezeInput
                     id="firstname"
                     type="text"
@@ -71,7 +71,7 @@ const submit = () => {
             </div>
 
             <div>
-                <BreezeLabel for="phone" value="Phone" />
+                <BreezeLabel for="phone" value="Téléphone" />
                 <BreezeInput
                     id="phone"
                     type="text"
@@ -96,7 +96,7 @@ const submit = () => {
             </div>
 
             <div class="mt-4">
-                <BreezeLabel for="password" value="Password" />
+                <BreezeLabel for="password" value="Mot de passe" />
                 <BreezeInput
                     id="password"
                     type="password"
@@ -110,7 +110,7 @@ const submit = () => {
             <div class="mt-4">
                 <BreezeLabel
                     for="password_confirmation"
-                    value="Confirm Password"
+                    value="Confirmation du mot de passe"
                 />
                 <BreezeInput
                     id="password_confirmation"
