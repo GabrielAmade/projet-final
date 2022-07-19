@@ -15,11 +15,12 @@ const form = useForm({
     city: "",
     capacity: "",
     hours: "",
+    // picture: "",
     terms: false,
 });
 
 const submit = () => {
-    form.post(route("createResto"), {
+    form.post(route("sendResto"), {
         onFinish: () => form.reset(),
     });
 };
@@ -128,6 +129,18 @@ const submit = () => {
                     autocomplete="hours"
                 />
             </div>
+
+            <!-- <div class="mt-4">
+                <BreezeLabel for="picture" value="Sélectionner votre image :" />
+                <BreezeInput
+                    id="picture"
+                    type="file"
+                    class="mt-1 block w-full"
+                    v-model="form.picture"
+                    required
+                    autocomplete="picture"
+                />
+            </div> -->
 
             <div class="flex items-center justify-end mt-4">
                 <BreezeButton

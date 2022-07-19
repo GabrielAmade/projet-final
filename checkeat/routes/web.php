@@ -1,8 +1,9 @@
 <?php
 
-use Illuminate\Foundation\Application;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\RestoController;
 use Inertia\Inertia;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Foundation\Application;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,3 +43,6 @@ require __DIR__ . '/auth.php';
 Route::get('/create', function () {
     return Inertia::render('Resto/CreateResto');
 })->name('createResto');
+
+
+Route::post('/store', [RestoController::class, "store"])->name('sendResto');

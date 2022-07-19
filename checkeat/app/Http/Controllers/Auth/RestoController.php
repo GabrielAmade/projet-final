@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Models\Restaurant;
 use App\Models\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Registered;
@@ -12,7 +13,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
 use Inertia\Inertia;
 
-class RegisteredUserController extends Controller
+class RestoController extends Controller
 {
     /**
      * Display the registration view.
@@ -43,9 +44,10 @@ class RegisteredUserController extends Controller
             'city' => 'required|string',
             'capacity' => 'required|string',
             'hours' => 'required|string',
+            // 'picture' => 'required|picture'
         ]);
 
-        $restaurant = User::create([
+        Restaurant::create([
             'name' => $request->name,
             'phone' => $request->phone,
             'email' => $request->email,
@@ -56,10 +58,6 @@ class RegisteredUserController extends Controller
             'hours' => $request->hours,
         ]);
 
-        event(new Registered($restaurant));
-
-        Auth::login($restaurant);
-
-        return redirect(RouteServiceProvider::HOME);
+        return Inertia::render('Resto/Success');
     }
 }
