@@ -13,7 +13,7 @@ defineProps({
     <Head title="Welcome" />
 
     <div
-        class="h-16 w-full flex justify-center bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0"
+        class="w-full flex justify-center bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0"
     >
         <div
             v-if="canLogin"
@@ -22,9 +22,9 @@ defineProps({
             <Link
                 v-if="$page.props.auth.user"
                 :href="route('dashboard')"
-                class="text-sm text-gray-700 underline"
+                class="text-lg font-black text-red-700 border-2 border-red-700 rounded p-2"
             >
-                Dashboard
+                Tableau de bord
             </Link>
 
             <template v-else>
@@ -52,9 +52,9 @@ defineProps({
         "
     >
         <div
-            class="title font-extrabold text-8xl text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-pink-600 p-2 drop-shadow-lg shadow-black"
+            class="title mt-40 font-extrabold text-8xl text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-pink-600 p-2 drop-shadow-lg shadow-black"
         >
-            Cheack'eat
+            Check'EAT
         </div>
 
         <div
@@ -70,7 +70,7 @@ defineProps({
         <button
             class="mb-32 font-black text-xl animate-bounce w-60 text-gray-200 bg-gradient-to-r from-red-700 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
         >
-            Here we GO
+            Here we GOOO
         </button>
     </div>
 </template>
