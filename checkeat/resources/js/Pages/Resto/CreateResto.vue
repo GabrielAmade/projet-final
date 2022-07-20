@@ -162,23 +162,7 @@ const submit = () => {
                 />
             </div>
 
-<<<<<<< HEAD
-            <!-- <div class="mt-4">
-                <BreezeLabel for="picture" value="Sélectionner votre image :" />
-                <BreezeInput
-                    id="picture"
-                    type="file"
-                    class="mt-1 block w-full"
-                    v-model="form.picture"
-                    required
-                    autocomplete="picture"
-                />
-            </div> -->
-
-            <div class="flex items-center justify-end mt-4">
-=======
             <div class="flex items-center justify-center mt-4">
->>>>>>> phil1
                 <BreezeButton
                     class="ml-4"
                     :class="{ 'opacity-25': form.processing }"
