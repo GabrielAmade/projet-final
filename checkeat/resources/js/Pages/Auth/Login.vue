@@ -27,7 +27,7 @@ const submit = () => {
 
 <template>
     <BreezeGuestLayout>
-        <Head title="Log in" />
+        <Head title="Connexion" />
 
         <BreezeValidationErrors class="mb-4" />
 
@@ -37,7 +37,11 @@ const submit = () => {
 
         <form @submit.prevent="submit">
             <div>
-                <BreezeLabel for="email" value="Email" />
+                <BreezeLabel
+                    for="email"
+                    value="Email"
+                    class="text-red-700 font-black"
+                />
                 <BreezeInput
                     id="email"
                     type="email"
@@ -50,7 +54,11 @@ const submit = () => {
             </div>
 
             <div class="mt-4">
-                <BreezeLabel for="password" value="Mot de passe" />
+                <BreezeLabel
+                    for="password"
+                    value="Mot de passe"
+                    class="text-red-700 font-black"
+                />
                 <BreezeInput
                     id="password"
                     type="password"
@@ -67,7 +75,7 @@ const submit = () => {
                         name="remember"
                         v-model:checked="form.remember"
                     />
-                    <span class="ml-2 text-sm text-gray-600"
+                    <span class="ml-2 text-sm text-red-600 font-black"
                         >Se souvenir de moi</span
                     >
                 </label>
@@ -77,7 +85,7 @@ const submit = () => {
                 <Link
                     v-if="canResetPassword"
                     :href="route('password.request')"
-                    class="underline text-sm text-gray-600 hover:text-gray-900"
+                    class="underline text-sm text-red-600 hover:text-red-900 font-black"
                 >
                     Mot de passe oublié ?
                 </Link>
