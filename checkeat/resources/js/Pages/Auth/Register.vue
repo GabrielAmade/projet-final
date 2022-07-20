@@ -26,7 +26,9 @@ const submit = () => {
 
 <template>
     <BreezeGuestLayout>
-        <Head title="Register" />
+        <Head title="Inscription" />
+
+        <p class="flex align-center">Inscription Restaurateur</p>
 
         <BreezeValidationErrors class="mb-4" />
 
@@ -122,10 +124,10 @@ const submit = () => {
                 />
             </div>
 
-            <div class="flex items-center justify-end mt-4">
+            <div class="flex items-center justify-center mt-4">
                 <Link
                     :href="route('login')"
-                    class="underline text-sm text-gray-600 hover:text-gray-900"
+                    class="underline text-sm text-red-600 hover:text-red-900"
                 >
                     Déjà inscrit ?
                 </Link>

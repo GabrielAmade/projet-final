@@ -27,13 +27,17 @@ const submit = () => {
 
 <template>
     <BreezeGuestLayout>
-        <Head title="Create Restaurants" />
+        <Head title="Creation de Restaurant" />
 
         <BreezeValidationErrors class="mb-4" />
 
         <form @submit.prevent="submit">
             <div>
-                <BreezeLabel for="name" value="Nom du restaurant" />
+                <BreezeLabel
+                    for="name"
+                    value="Nom du restaurant"
+                    class="text-red-700 font-black"
+                />
                 <BreezeInput
                     id="name"
                     type="text"
@@ -45,7 +49,11 @@ const submit = () => {
                 />
             </div>
             <div>
-                <BreezeLabel for="phone" value="Téléphone" />
+                <BreezeLabel
+                    for="phone"
+                    value="Téléphone"
+                    class="text-red-700 font-black"
+                />
                 <BreezeInput
                     id="phone"
                     type="text"
@@ -58,7 +66,11 @@ const submit = () => {
             </div>
 
             <div class="mt-4">
-                <BreezeLabel for="email" value="Email" />
+                <BreezeLabel
+                    for="email"
+                    value="Email"
+                    class="text-red-700 font-black"
+                />
                 <BreezeInput
                     id="email"
                     type="email"
@@ -70,7 +82,11 @@ const submit = () => {
             </div>
 
             <div class="mt-4">
-                <BreezeLabel for="adress" value="Adresse du restaurant" />
+                <BreezeLabel
+                    for="adress"
+                    value="Adresse du restaurant"
+                    class="text-red-700 font-black"
+                />
                 <BreezeInput
                     id="adress"
                     type="text"
@@ -82,7 +98,11 @@ const submit = () => {
             </div>
 
             <div class="mt-4">
-                <BreezeLabel for="zip" value="Code Postal" />
+                <BreezeLabel
+                    for="zip"
+                    value="Code Postal"
+                    class="text-red-700 font-black"
+                />
                 <BreezeInput
                     id="zip"
                     type="text"
@@ -94,7 +114,11 @@ const submit = () => {
             </div>
 
             <div class="mt-4">
-                <BreezeLabel for="city" value="Ville" />
+                <BreezeLabel
+                    for="city"
+                    value="Ville"
+                    class="text-red-700 font-black"
+                />
                 <BreezeInput
                     id="city"
                     type="text"
@@ -106,7 +130,11 @@ const submit = () => {
             </div>
 
             <div class="mt-4">
-                <BreezeLabel for="capacity" value="Numéro de table" />
+                <BreezeLabel
+                    for="capacity"
+                    value="Numéro de table"
+                    class="text-red-700 font-black"
+                />
                 <BreezeInput
                     id="capacity"
                     type="text"
@@ -118,7 +146,11 @@ const submit = () => {
             </div>
 
             <div class="mt-4">
-                <BreezeLabel for="hours" value="Horaires d'ouverture" />
+                <BreezeLabel
+                    for="hours"
+                    value="Horaires d'ouverture"
+                    class="text-red-700 font-black"
+                />
                 <BreezeInput
                     id="hours"
                     type="text"
@@ -129,7 +161,7 @@ const submit = () => {
                 />
             </div>
 
-            <div class="flex items-center justify-end mt-4">
+            <div class="flex items-center justify-center mt-4">
                 <BreezeButton
                     class="ml-4"
                     :class="{ 'opacity-25': form.processing }"
